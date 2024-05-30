@@ -26,7 +26,7 @@ function askQuestion() {
   let i = 0
 
   while (i < questions.length) {
-    candidateAnswer = input.question (questions[i]).toLowerCase();
+    candidateAnswer = input.question (questions[i]);
     candidateAnswers.push(candidateAnswer);
     i++;
   }
@@ -51,9 +51,7 @@ function gradeQuiz(candidateAnswers) {
   } else {
     console.log(` \n You Failed, you must score an 80 or better to pass. Your Score: ${grade}`);
   }
-
 return grade;
-
 }
 
 
